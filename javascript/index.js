@@ -27,8 +27,8 @@ console.log(gen);
 document.getElementById('canvas').onclick = function (e) {
     let x;
     let y;
-    x = Math.floor(e.offsetX / 40);
-    y = Math.floor(e.offsetY / 40);
+    x = Math.floor(e.offsetX / DIMENSIONS.tile_width);
+    y = Math.floor(e.offsetY / DIMENSIONS.tile_height);
     console.log(x, ' ', y, ' ', e.which);
     if(gen) {
         if (e.which === 1) {
